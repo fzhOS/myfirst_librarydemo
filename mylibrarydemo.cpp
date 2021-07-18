@@ -36,13 +36,6 @@ public:
     {
         return day;
     }
-    //
-    // bool operator<(Time &t)
-    // {
-    //     return year < t.year ? true : month < t.month ? true
-    //                               : day < t.day       ? true
-    //                                                   : false;
-    // }
     bool operator<(const Time&t1)const
     {
         return year!=t1.year?year<=t1.year:month!=t1.month?month<=t1.month:day<=t1.day;
